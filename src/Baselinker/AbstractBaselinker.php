@@ -52,7 +52,7 @@ class AbstractBaselinker
             'form_params' => [
                 'token'      => $this->token,
                 'method'     => $method,
-                'parameters' => json_encode($this->storageData() + $params),
+                'parameters' => json_encode( $params),
             ],
             'headers'     => [
                 'content-type' => 'application/x-www-form-urlencoded',

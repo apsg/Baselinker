@@ -9,11 +9,13 @@ class Products extends AbstractBaselinker
     {
         $response = $this->request(__FUNCTION__, $this->storageData());
 
-        return $response->products;
+        return object_get($response, 'products');
     }
 
     public function addProduct(array $productData)
     {
-        return $this->request(__FUNCTION__, $this->storageData() + $productData);
+        $response = $this->request(__FUNCTION__, $this->storageData() + $productData);
+
+        return object_get($response, 'product_id');
     }
 }
