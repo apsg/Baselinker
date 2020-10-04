@@ -1,1 +1,1 @@
-Baselinker
+Laravel Baselinker API integration
