@@ -1,5 +1,8 @@
 ### Laravel Baselinker API integration
 
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Total Downloads][ico-downloads]][link-downloads]
+
 ##### Baselinker docs:
 
 https://api.baselinker.com
@@ -69,3 +72,16 @@ See [baselinker docs](https://api.baselinker.com) for reference.
 
 - `addOrder`
 - `getOrderStatusList`
+
+
+[ico-version]: https://img.shields.io/packagist/v/apsg/baselinker.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/apsg/baselinker.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/apsg/baselinker/master.svg?style=flat-square
+[ico-styleci]: https://styleci.io/repos/12345678/shield
+
+[link-packagist]: https://packagist.org/packages/apsg/baselinker
+[link-downloads]: https://packagist.org/packages/apsg/baselinker
+[link-travis]: https://travis-ci.org/apsg/baselinker
+[link-styleci]: https://styleci.io/repos/12345678
+[link-author]: https://github.com/apsg
+[link-contributors]: ../../contributors
