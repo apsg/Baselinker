@@ -19,10 +19,7 @@ class AbstractBaselinker
     public function __construct(Client $client, string $token = null)
     {
         $this->client = $client;
-
-        if (is_null($token)) {
-            $this->token = config('baselinker.token');
-        }
+        $this->token = $token ?? config('baselinker.token');
 
         $this->storageId = config('baselinker.storage_id', 'bl_1');
     }
@@ -52,7 +49,7 @@ class AbstractBaselinker
             'form_params' => [
                 'token'      => $this->token,
                 'method'     => $method,
-                'parameters' => json_encode( $params),
+                'parameters' => json_encode($params),
             ],
             'headers'     => [
                 'content-type' => 'application/x-www-form-urlencoded',
